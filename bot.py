@@ -4,7 +4,9 @@ from aiogram.types import Message
 from aiogram.utils import executor
 
 # Введи свій токен від BotFather тут
-TOKEN = "7821953524:AAGU4eIQV4z9CJv-3BAD3Vr_TseBt-qD8Bo"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
+
 
 # Увімкнення логування (для відстеження помилок)
 logging.basicConfig(level=logging.INFO)
